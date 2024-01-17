@@ -9,5 +9,7 @@ public class Triangle {
         System.out.println("     /       \\");
         System.out.println("    /         \\");
         System.out.println("   _____________");
+
+        System.out.println("Hello Quincy");
     }
 }
