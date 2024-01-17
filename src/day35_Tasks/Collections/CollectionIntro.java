@@ -1,5 +1,10 @@
 package day35_Tasks.Collections;
 
+import day33_Tasks.B;
+
+import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 
@@ -51,6 +56,28 @@ public class CollectionIntro {
     *
     *
     * */
+
+
+
+    public static void main(String[] args) {
+        List<BigInteger> integerList = new ArrayList<>();
+
+        BigInteger int1 = new BigInteger("36524");
+        BigInteger int2 = new BigInteger("111");
+        BigInteger int3 = new BigInteger("111");
+
+        integerList.add(int1);
+        integerList.add(int2);
+        integerList.add(int3);
+
+        System.out.println(integerList);
+
+        System.out.println(integerList.stream().filter(i -> i.compareTo(BigInteger.valueOf(111)) == 0).count());
+        System.out.println(integerList.stream().toArray().length);
+        System.out.println("***************");
+        integerList.forEach(i-> System.out.println(i));
+
+    }
     CopyOnWriteArrayList copyOnWriteArrayList = new CopyOnWriteArrayList();
     ConcurrentHashMap  concurrentHashMap = new ConcurrentHashMap();
 

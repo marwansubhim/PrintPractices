@@ -18,7 +18,7 @@ public class MinutesToYearsAndDays {
 //        }else{
 //            System.out.println(minutes+" are invalid");
 //        }
-        long minutes = 1055120;
+        long minutes = 9999999;
         if (minutes < 0) {
             System.out.println("Invalid Value");
         }else {
