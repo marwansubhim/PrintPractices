@@ -11,5 +11,7 @@ public class DuplicateIt {
 
         System.out.println(word1+""+word2+""+word2+""+word1);
 
+
+
     }
 }
